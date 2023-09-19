@@ -1,0 +1,12 @@
+C:\Users\arthu\OneDrive\Documentos\Documents\Repository\Github\DomainDrivenDesign\01-introduction_domain_driven_design\Infra\bin\Debug\net6.0\Infra.deps.json
+C:\Users\arthu\OneDrive\Documentos\Documents\Repository\Github\DomainDrivenDesign\01-introduction_domain_driven_design\Infra\bin\Debug\net6.0\Infra.dll
+C:\Users\arthu\OneDrive\Documentos\Documents\Repository\Github\DomainDrivenDesign\01-introduction_domain_driven_design\Infra\bin\Debug\net6.0\Infra.pdb
+C:\Users\arthu\OneDrive\Documentos\Documents\Repository\Github\DomainDrivenDesign\01-introduction_domain_driven_design\Infra\obj\Debug\net6.0\Infra.csproj.AssemblyReference.cache
+C:\Users\arthu\OneDrive\Documentos\Documents\Repository\Github\DomainDrivenDesign\01-introduction_domain_driven_design\Infra\obj\Debug\net6.0\Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arthu\OneDrive\Documentos\Documents\Repository\Github\DomainDrivenDesign\01-introduction_domain_driven_design\Infra\obj\Debug\net6.0\Infra.AssemblyInfoInputs.cache
+C:\Users\arthu\OneDrive\Documentos\Documents\Repository\Github\DomainDrivenDesign\01-introduction_domain_driven_design\Infra\obj\Debug\net6.0\Infra.AssemblyInfo.cs
+C:\Users\arthu\OneDrive\Documentos\Documents\Repository\Github\DomainDrivenDesign\01-introduction_domain_driven_design\Infra\obj\Debug\net6.0\Infra.csproj.CoreCompileInputs.cache
+C:\Users\arthu\OneDrive\Documentos\Documents\Repository\Github\DomainDrivenDesign\01-introduction_domain_driven_design\Infra\obj\Debug\net6.0\Infra.dll
+C:\Users\arthu\OneDrive\Documentos\Documents\Repository\Github\DomainDrivenDesign\01-introduction_domain_driven_design\Infra\obj\Debug\net6.0\refint\Infra.dll
+C:\Users\arthu\OneDrive\Documentos\Documents\Repository\Github\DomainDrivenDesign\01-introduction_domain_driven_design\Infra\obj\Debug\net6.0\Infra.pdb
+C:\Users\arthu\OneDrive\Documentos\Documents\Repository\Github\DomainDrivenDesign\01-introduction_domain_driven_design\Infra\obj\Debug\net6.0\ref\Infra.dll

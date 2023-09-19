@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UypyzKWeAPBGG9eLNNqfVAF1xn7KeD7FVDBSFoxm8fYg02VazqYz/ImFAzN3VzvDx4SxPK3JRF38/j0aZo4ipQ==",
+  "dgSpecHash": "m7iueepRYTk74b4r7Iqfu1ARInpJDKaQzIql1c/JrJK1Oq9+lcEnoSPJwx6NHxYT5Uw2EtoXN7Av6JH+RpgujQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\dotnet-working-with-domain-driven-design\\01-introduction_domain_driven_design\\Service\\Service.csproj",
+  "projectFilePath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Service\\Service.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

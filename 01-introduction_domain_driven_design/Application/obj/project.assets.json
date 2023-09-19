@@ -229,11 +229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\dotnet-working-with-domain-driven-design\\01-introduction_domain_driven_design\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\dotnet-working-with-domain-driven-design\\01-introduction_domain_driven_design\\Application\\Application.csproj",
+      "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\dotnet-working-with-domain-driven-design\\01-introduction_domain_driven_design\\Application\\obj\\",
+      "outputPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",

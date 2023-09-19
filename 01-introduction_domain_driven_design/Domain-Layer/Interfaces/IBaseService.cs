@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Domain_Layer.Interfaces
 {
-    public interface IBaseService<TEntity> where TEntity : BaseEntity
+    public interface IBaseService<TEntity> where TEntity : BaseEntitie
     {
         TEntity Add<TValidator>(TEntity obj) where TValidator : AbstractValidator<TEntity>;
 

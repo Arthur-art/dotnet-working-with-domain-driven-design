@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ikfh0jeHcUMyL3GidIcetoVEk+Atdwt++vTorSJzMZyD+WV6Pddp8zspssxwSiUSeOcWQx/zcmKBS6Or1oq65w==",
+  "dgSpecHash": "K29CKa61e5LL5T7iGGVAbf+B86tYwao05EXrTJtA0YQkbDhzJP8QP1up36KMQk+uSyvW/y78YzmrA2nKD+jAew==",
   "success": true,
-  "projectFilePath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\dotnet-working-with-domain-driven-design\\01-introduction_domain_driven_design\\Infra\\Infra.csproj",
+  "projectFilePath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Infra\\Infra.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
