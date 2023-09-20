@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain_Layer.Entities
 {
-    public abstract class BaseEntitie
+    public abstract class BaseEntity
     {
         public virtual int Id { get; set; }
     }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain_Layer.Interfaces
 {
-    public interface IBaseRepository<TEntity> where TEntity : BaseEntitie
+    public interface IBaseRepository<TEntity> where TEntity : BaseEntity
     {
         void Insert(TEntity obj);
 
