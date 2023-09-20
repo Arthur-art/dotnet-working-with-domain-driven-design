@@ -4,14 +4,14 @@
     "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Service\\Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Service\\Service.csproj": {
+    "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Domain-Layer\\Domain-Layer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Service\\Service.csproj",
-        "projectName": "Service",
-        "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Service\\Service.csproj",
+        "projectUniqueName": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Domain-Layer\\Domain-Layer.csproj",
+        "projectName": "Domain-Layer",
+        "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Domain-Layer\\Domain-Layer.csproj",
         "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Service\\obj\\",
+        "outputPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Domain-Layer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,77 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Service\\Service.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Service\\Service.csproj",
+        "projectName": "Service",
+        "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Service\\Service.csproj",
+        "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Service\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Domain-Layer\\Domain-Layer.csproj": {
+                "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Domain-Layer\\Domain-Layer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
