@@ -3045,11 +3045,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Infra\\Infra.csproj",
+      "projectUniqueName": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\dotnet-working-with-domain-driven-design\\01-introduction_domain_driven_design\\Infra\\Infra.csproj",
       "projectName": "Infra",
-      "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Infra\\Infra.csproj",
+      "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\dotnet-working-with-domain-driven-design\\01-introduction_domain_driven_design\\Infra\\Infra.csproj",
       "packagesPath": "C:\\Users\\arthu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Infra\\obj\\",
+      "outputPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\dotnet-working-with-domain-driven-design\\01-introduction_domain_driven_design\\Infra\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\arthu\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3066,11 +3066,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Domain-Layer\\Domain-Layer.csproj": {
-              "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Domain-Layer\\Domain-Layer.csproj"
+            "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\dotnet-working-with-domain-driven-design\\01-introduction_domain_driven_design\\Domain-Layer\\Domain-Layer.csproj": {
+              "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\dotnet-working-with-domain-driven-design\\01-introduction_domain_driven_design\\Domain-Layer\\Domain-Layer.csproj"
             },
-            "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Service\\Service.csproj": {
-              "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\DomainDrivenDesign\\01-introduction_domain_driven_design\\Service\\Service.csproj"
+            "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\dotnet-working-with-domain-driven-design\\01-introduction_domain_driven_design\\Service\\Service.csproj": {
+              "projectPath": "C:\\Users\\arthu\\OneDrive\\Documentos\\Documents\\Repository\\Github\\dotnet-working-with-domain-driven-design\\01-introduction_domain_driven_design\\Service\\Service.csproj"
             }
           }
         }
