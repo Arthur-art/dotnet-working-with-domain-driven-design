@@ -1,4 +1,10 @@
+using CookBook.Domain.Extension;
+using CookBook.Infrastructure.Migrations;
+
 var builder = WebApplication.CreateBuilder(args);
+
+string connectionString = builder.Configuration.GetConnectionStringDatabase();
+string nameDataBase = builder.Configuration.GetNameDataBase();
 
 // Add services to the container.
 
@@ -22,4 +28,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+UpdateDatabase();
+
 app.Run();
+
+void UpdateDatabase()
+{
+    Database.CreateDatabase(connectionString, nameDataBase);
+}
