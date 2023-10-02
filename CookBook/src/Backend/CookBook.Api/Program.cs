@@ -35,4 +35,5 @@ app.Run();
 void UpdateDatabase()
 {
     Database.CreateDatabase(connectionString, nameDataBase);
+    app.MigrationDatabase();
 }
