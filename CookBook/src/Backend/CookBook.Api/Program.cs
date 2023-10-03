@@ -1,4 +1,5 @@
 using CookBook.Domain.Extension;
+using CookBook.Infrastructure;
 using CookBook.Infrastructure.Migrations;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,7 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddRepository(connectionString);
 
 var app = builder.Build();
 
