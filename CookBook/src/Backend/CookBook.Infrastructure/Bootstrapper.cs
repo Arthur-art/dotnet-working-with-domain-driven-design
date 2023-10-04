@@ -1,4 +1,7 @@
-﻿using FluentMigrator.Runner;
+﻿using CookBook.Domain.Repositories;
+using CookBook.Infrastructure.RepositoryAccess;
+using CookBook.Infrastructure.RepositoryAccess.Repository;
+using FluentMigrator.Runner;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
 
@@ -9,6 +12,19 @@ public static class Bootstrapper
     public static void AddRepository(this IServiceCollection services, string connectionString)
     {
         AddFluentMigrator(services, connectionString);
+        AddRepositories(services);
+        AddWorkUnit(services);
+    }
+
+    private static void AddWorkUnit(IServiceCollection services)
+    {
+        services.AddScoped<IWorkUnit, WorkUnit>();
+    }
+
+    public static void AddRepositories(IServiceCollection services)
+    {
+        services.AddScoped<IUserWriteOnlyRepository, UserRepository>()
+            .AddScoped<IUserReadOnlyRepository, UserRepository>();
     }
 
     private static void AddFluentMigrator(IServiceCollection services, string connectionString)
