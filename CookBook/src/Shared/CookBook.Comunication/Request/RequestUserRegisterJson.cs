@@ -9,4 +9,5 @@ public class RequestUserRegisterJson
     public string Password { get; set; }
 
     public string PhoneNumber { get; set; }
+
 }
