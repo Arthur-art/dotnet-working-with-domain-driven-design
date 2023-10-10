@@ -106,7 +106,7 @@ namespace CookBook.Exceptions {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to A senha do usuário é invalida..
+        ///   Looks up a localized string similar to A senha do usuário deve conter no máximo 6 caracteres..
         /// </summary>
         public static string INVALID_USER_PASSWORD {
             get {

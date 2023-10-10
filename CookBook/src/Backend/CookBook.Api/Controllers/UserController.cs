@@ -12,6 +12,7 @@ public class UserController : ControllerBase
     public IActionResult GetUser()
     {
         
+
         var messages = ResourceExceptionsMessages.EMPTY_USER_NAME;
 
         return Ok(messages);

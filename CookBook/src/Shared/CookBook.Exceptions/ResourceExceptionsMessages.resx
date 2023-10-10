@@ -133,7 +133,7 @@
     <value>O e-mail do usuário é inválido.</value>
   </data>
   <data name="INVALID_USER_PASSWORD" xml:space="preserve">
-    <value>A senha do usuário é invalida.</value>
+    <value>A senha do usuário deve conter no máximo 6 caracteres.</value>
   </data>
   <data name="INVALID_USER_PHONE" xml:space="preserve">
     <value>O telefone do usuário é invalido.</value>
