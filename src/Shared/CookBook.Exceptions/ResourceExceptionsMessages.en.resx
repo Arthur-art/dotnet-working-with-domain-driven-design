@@ -138,4 +138,7 @@
   <data name="INVALID_USER_PHONE" xml:space="preserve">
     <value>The user's phone is invalid.</value>
   </data>
+  <data name="UNKNOWN_ERROR" xml:space="preserve">
+    <value>Unknown error.</value>
+  </data>
 </root>

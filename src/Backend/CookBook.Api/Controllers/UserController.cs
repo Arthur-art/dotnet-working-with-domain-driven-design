@@ -1,3 +1,5 @@
+using CookBook.Application.UseCases.User.Register;
+using CookBook.Comunication.Request;
 using CookBook.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 
@@ -9,12 +11,17 @@ public class UserController : ControllerBase
 {
 
     [HttpGet(Name = "UserController")]
-    public IActionResult GetUser()
+    public async Task<IActionResult> GetUser()
     {
-        
+        var usecase = new UserRegisterUseCase();
+        await usecase.Execute(new RequestUserRegisterJson
+        {
+            Email = "arthur@gmail.com",
+            Name= "Arthur",   
+            Password="123456",
+            PhoneNumber = "31 9 953-7539"
+        });
 
-        var messages = ResourceExceptionsMessages.EMPTY_USER_NAME;
-
-        return Ok(messages);
+        return Ok();
     }
 };

@@ -5,16 +5,16 @@ namespace CookBook.Application.UseCases.User.Register;
 
 public class UserRegisterUseCase
 {
-    public Task Execute(RequestUserRegisterJson userRegisterJson)
+    public async Task Execute(RequestUserRegisterJson userRegisterJson)
     {
-        
+        Validate(userRegisterJson);
     }
 
     private void Validate(RequestUserRegisterJson userRegisterJson)
     {
-        UserRegisterValidate validate = new UserRegisterValidate();
+        UserRegisterValidate validator = new UserRegisterValidate();
 
-        var result = validate.Validate(userRegisterJson);
+        var result = validator.Validate(userRegisterJson);
 
         if (!result.IsValid)
         {
