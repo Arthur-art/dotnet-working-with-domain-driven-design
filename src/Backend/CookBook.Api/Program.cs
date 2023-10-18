@@ -1,8 +1,7 @@
+using CookBook.Api.Filters;
 using CookBook.Domain.Extension;
 using CookBook.Infrastructure;
 using CookBook.Infrastructure.Migrations;
-using CookBook.Infrastructure.RepositoryAccess;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +15,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddRepository(connectionString);
+builder.Services.AddMvc((options) => options.Filters.Add(typeof(FiltersExceptions)));
 
 var app = builder.Build();
 

@@ -1,4 +1,5 @@
 ﻿using CookBook.Comunication.Request;
+using CookBook.Exceptions.ExceptionsBase;
 
 namespace CookBook.Application.UseCases.User.Register;
 
@@ -6,7 +7,7 @@ public class UserRegisterUseCase
 {
     public Task Execute(RequestUserRegisterJson userRegisterJson)
     {
-        throw new System.NotImplementedException();
+        
     }
 
     private void Validate(RequestUserRegisterJson userRegisterJson)
@@ -18,7 +19,7 @@ public class UserRegisterUseCase
         if (!result.IsValid)
         {
             var errorMessages = result.Errors.Select(error => error.ErrorMessage).ToList();
-            throw new Exception();
+            throw new ValidationErrosException(errorMessages);
         }
     }
 }
