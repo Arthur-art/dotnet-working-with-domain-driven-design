@@ -1,6 +1,5 @@
 using CookBook.Application.UseCases.User.Register;
 using CookBook.Comunication.Request;
-using CookBook.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CookBook.Api.Controllers;
@@ -11,15 +10,15 @@ public class UserController : ControllerBase
 {
 
     [HttpGet(Name = "UserController")]
-    public async Task<IActionResult> GetUser()
+    public async Task<IActionResult> GetUser([FromServices] IUserRegisterUseCase _service)
     {
-        var usecase = new UserRegisterUseCase();
-        await usecase.Execute(new RequestUserRegisterJson
+
+        await _service.Execute(new RequestUserRegisterJson
         {
             Email = "arthur@gmail.com",
             Name= "Arthur",   
             Password="123456",
-            PhoneNumber = "31 9 953-7539"
+            PhoneNumber = "31 9 8953-7539"
         });
 
         return Ok();
