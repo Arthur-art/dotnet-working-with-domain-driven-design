@@ -5,9 +5,18 @@ namespace CookBook.Application.Services.Cryptography;
 
 public class PasswordCryptography
 {
+    private readonly string _encryptingKey;
+
+    public PasswordCryptography(string encryptingKey)
+    {
+        _encryptingKey = encryptingKey;
+    }
+
     public string Encrypt(string password)
     {
-        var bytes = Encoding.UTF8.GetBytes(password);
+        var passwordWithKey = $"{password}{_encryptingKey}";
+
+        var bytes = Encoding.UTF8.GetBytes(passwordWithKey);
         var sha512 = SHA512.Create();
         byte[] hashBytes= sha512.ComputeHash(bytes);
 

@@ -15,8 +15,8 @@ public class UserController : ControllerBase
 
         await _service.Execute(new RequestUserRegisterJson
         {
-            Email = "suellen@gmail.com",
-            Name= "Suellen",   
+            Email = "arthur@gmail.com",
+            Name= "Arthur",   
             Password="123456",
             PhoneNumber = "31 9 8953-7539"
         });
