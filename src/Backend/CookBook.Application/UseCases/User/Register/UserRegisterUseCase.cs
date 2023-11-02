@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using CookBook.Application.Services.Cryptography;
 using CookBook.Comunication.Request;
 using CookBook.Domain.Repositories;
 using CookBook.Exceptions.ExceptionsBase;
@@ -10,18 +11,20 @@ public class UserRegisterUseCase : IUserRegisterUseCase
     private readonly IUserWriteOnlyRepository _repository;
     private readonly IMapper _mapper;
     private readonly IWorkUnit _workUnit;
-    public UserRegisterUseCase(IUserWriteOnlyRepository repository, IMapper mapper, IWorkUnit workUnit)
+    private readonly PasswordCryptography _passwordCryptography;
+    public UserRegisterUseCase(IUserWriteOnlyRepository repository, IMapper mapper, IWorkUnit workUnit, PasswordCryptography passwordCryptography)
     {
         _repository = repository;
         _mapper = mapper;
         _workUnit = workUnit;
+        _passwordCryptography = passwordCryptography;
     }
 
     public async Task Execute(RequestUserRegisterJson userRegisterJson)
     {
         Validate(userRegisterJson);
         var userEntity = _mapper.Map<Domain.Entities.User>(userRegisterJson);
-        userEntity.Password = "cript";
+        userEntity.Password = _passwordCryptography.Encrypt(userEntity.Password);
 
         await _repository.Add(userEntity);
         await _workUnit.Commit();
