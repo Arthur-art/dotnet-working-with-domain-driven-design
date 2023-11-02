@@ -13,7 +13,7 @@ public class UserController : ControllerBase
     public async Task<IActionResult> GetUser([FromServices] IUserRegisterUseCase _service)
     {
 
-        await _service.Execute(new RequestUserRegisterJson
+       var response =  await _service.Execute(new RequestUserRegisterJson
         {
             Email = "arthur@gmail.com",
             Name= "Arthur",   
@@ -21,6 +21,6 @@ public class UserController : ControllerBase
             PhoneNumber = "31 9 8953-7539"
         });
 
-        return Ok();
+        return Ok(new { message = "Usuario cadastrado", token = response.Token });
     }
 };

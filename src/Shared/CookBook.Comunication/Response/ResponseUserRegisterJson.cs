@@ -1,6 +1,6 @@
 ﻿namespace CookBook.Comunication.Response;
 
-public class ResonseUserRegisterJson
+public class ResponseUserRegisterJson
 {
     public string Token { get; set; }
 }
