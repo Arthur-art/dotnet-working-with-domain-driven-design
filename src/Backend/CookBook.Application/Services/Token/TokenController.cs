@@ -29,10 +29,31 @@ public class TokenController
         {
             Subject = new ClaimsIdentity(claims),
             Expires = DateTime.UtcNow.AddMinutes(_lifeTimeToken),
-            SigningCredentials = new SigningCredentials(
-                new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(_securityKey)),
-                SecurityAlgorithms.HmacSha256Signature
-            )
+            SigningCredentials = new SigningCredentials(SimetricKey(),SecurityAlgorithms.HmacSha256Signature)
         };
+
+        var securityToken = tokenHandler.CreateToken(tokenDescriptor);
+        return tokenHandler.WriteToken(securityToken);
+    }
+
+    public void ValidateToken(string token)
+    {
+        var tokenHandler = new JwtSecurityTokenHandler();
+        var paramsValidation = new TokenValidationParameters
+        {
+            RequireExpirationTime = true,
+            IssuerSigningKey = SimetricKey(),
+            ClockSkew = new TimeSpan(0),
+            ValidateIssuer = false,
+            ValidateAudience = false,
+        };
+
+        tokenHandler.ValidateToken(token, paramsValidation, out _);
+    }
+
+    private SymmetricSecurityKey SimetricKey()
+    {
+        var symmetricKey = Convert.FromBase64String(_securityKey);
+        return new SymmetricSecurityKey(symmetricKey);
     }
 }

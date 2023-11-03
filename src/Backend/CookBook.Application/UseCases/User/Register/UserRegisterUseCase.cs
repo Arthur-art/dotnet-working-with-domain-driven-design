@@ -33,6 +33,13 @@ public class UserRegisterUseCase : IUserRegisterUseCase
 
         await _repository.Add(userEntity);
         await _workUnit.Commit();
+
+        var token = _tokenController.GenerateToken(userEntity.Email);
+
+        return new ResponseUserRegisterJson
+        {
+            Token = token,
+        };
     }
 
     private void Validate(RequestUserRegisterJson userRegisterJson)
