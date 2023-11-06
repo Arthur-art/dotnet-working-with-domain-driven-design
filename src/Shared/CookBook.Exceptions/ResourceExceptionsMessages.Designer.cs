@@ -131,5 +131,14 @@ namespace CookBook.Exceptions {
                 return ResourceManager.GetString("UNKNOWN_ERROR", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Usuário ja cadastrado na base..
+        /// </summary>
+        public static string USER_EXISTS_WITH_EMAIL {
+            get {
+                return ResourceManager.GetString("USER_EXISTS_WITH_EMAIL", resourceCulture);
+            }
+        }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using CookBook.Domain.Entities;
-using CookBook.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace CookBook.Infrastructure.RepositoryAccess;

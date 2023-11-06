@@ -141,4 +141,7 @@
   <data name="UNKNOWN_ERROR" xml:space="preserve">
     <value>Unknown error.</value>
   </data>
+  <data name="USER_EXISTS_WITH_EMAIL" xml:space="preserve">
+    <value>User already registered on the base.</value>
+  </data>
 </root>

@@ -141,4 +141,7 @@
   <data name="UNKNOWN_ERROR" xml:space="preserve">
     <value>Erro desconhecido.</value>
   </data>
+  <data name="USER_EXISTS_WITH_EMAIL" xml:space="preserve">
+    <value>Usuário ja cadastrado na base.</value>
+  </data>
 </root>
