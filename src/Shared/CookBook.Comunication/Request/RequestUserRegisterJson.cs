@@ -10,4 +10,11 @@ public class RequestUserRegisterJson
 
     public string PhoneNumber { get; set; }
 
+    public RequestUserRegisterJson(string name, string email, string password, string phoneNumber)
+    {
+        Name = name;
+        Email = email;
+        Password = password;
+        PhoneNumber = phoneNumber;
+    }
 }

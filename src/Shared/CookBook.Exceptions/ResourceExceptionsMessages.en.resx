@@ -136,7 +136,7 @@
     <value>The user password must contain a maximum of 6 characters</value>
   </data>
   <data name="INVALID_USER_PHONE" xml:space="preserve">
-    <value>The user's phone is invalid.</value>
+    <value>The user's phone is invalid. XX X XXXX-XXXX</value>
   </data>
   <data name="UNKNOWN_ERROR" xml:space="preserve">
     <value>Unknown error.</value>

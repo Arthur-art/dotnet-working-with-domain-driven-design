@@ -41,6 +41,7 @@ public class UserRegisterUseCase : IUserRegisterUseCase
 
         return new ResponseUserRegisterJson
         {
+            Message = "Usuário cadastrado.",
             Token = token,
         };
     }

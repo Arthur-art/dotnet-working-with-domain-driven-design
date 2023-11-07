@@ -115,7 +115,7 @@ namespace CookBook.Exceptions {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to O telefone do usuário é invalido..
+        ///   Looks up a localized string similar to O telefone do usuário é invalido. XX X XXXX-XXXX.
         /// </summary>
         public static string INVALID_USER_PHONE {
             get {

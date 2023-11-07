@@ -1,5 +1,6 @@
 using CookBook.Application.UseCases.User.Register;
 using CookBook.Comunication.Request;
+using CookBook.Comunication.Response;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CookBook.Api.Controllers;
@@ -9,18 +10,13 @@ namespace CookBook.Api.Controllers;
 public class UserController : ControllerBase
 {
 
-    [HttpGet(Name = "UserController")]
-    public async Task<IActionResult> GetUser([FromServices] IUserRegisterUseCase _service)
+    [HttpPost(Name = "UserRegister")]
+    [ProducesResponseType(typeof(ResponseUserRegisterJson), StatusCodes.Status201Created)]
+    public async Task<IActionResult> GetUser([FromServices] IUserRegisterUseCase _service, [FromBody] RequestUserRegisterJson requestUser)
     {
 
-       var response =  await _service.Execute(new RequestUserRegisterJson
-        {
-            Email = "arthur@gmail.com",
-            Name= "Arthur",   
-            Password="123456",
-            PhoneNumber = "31 9 8953-7539"
-        });
+       var response =  await _service.Execute(requestUser);
 
-        return Ok(new { message = "Usuario cadastrado", token = response.Token });
+       return Created(string.Empty, response);
     }
 };

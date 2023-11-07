@@ -136,7 +136,7 @@
     <value>A senha do usuário deve conter no máximo 6 caracteres.</value>
   </data>
   <data name="INVALID_USER_PHONE" xml:space="preserve">
-    <value>O telefone do usuário é invalido.</value>
+    <value>O telefone do usuário é invalido. XX X XXXX-XXXX</value>
   </data>
   <data name="UNKNOWN_ERROR" xml:space="preserve">
     <value>Erro desconhecido.</value>
