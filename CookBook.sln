@@ -13,21 +13,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{6C3046
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookBook.Comunication", "src\Shared\CookBook.Comunication\CookBook.Comunication.csproj", "{B9197ECE-D844-4ED6-A000-DDEB5FEEDEC8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookBook.Exceptions", "src\Shared\CookBook.Exceptions\CookBook.Exceptions.csproj", "{9A7DFE3A-89FE-425D-8FFE-C87C73F38F2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookBook.Exceptions", "src\Shared\CookBook.Exceptions\CookBook.Exceptions.csproj", "{9A7DFE3A-89FE-425D-8FFE-C87C73F38F2C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookBook.Application", "src\Backend\CookBook.Application\CookBook.Application.csproj", "{C54A8F54-570B-40EE-B24F-860A624A0AA5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookBook.Application", "src\Backend\CookBook.Application\CookBook.Application.csproj", "{C54A8F54-570B-40EE-B24F-860A624A0AA5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookBook.Domain", "src\Backend\CookBook.Domain\CookBook.Domain.csproj", "{4601BE83-69C3-4479-BFA5-EF0960218B1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookBook.Domain", "src\Backend\CookBook.Domain\CookBook.Domain.csproj", "{4601BE83-69C3-4479-BFA5-EF0960218B1C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookBook.Infrastructure", "src\Backend\CookBook.Infrastructure\CookBook.Infrastructure.csproj", "{4E441FDA-B6EB-41F5-AFF9-4A85BE17743C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookBook.Infrastructure", "src\Backend\CookBook.Infrastructure\CookBook.Infrastructure.csproj", "{4E441FDA-B6EB-41F5-AFF9-4A85BE17743C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CookBook.Api", "src\Backend\CookBook.Api\CookBook.Api.csproj", "{B16468FC-C313-470E-9689-2685A65ABDC5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CookBook.Api", "src\Backend\CookBook.Api\CookBook.Api.csproj", "{B16468FC-C313-470E-9689-2685A65ABDC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Validators.Test", "tests\Validators.Test\Validators.Test.csproj", "{41E3D868-117C-4E0F-A796-401BA828D565}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Validators.Test", "tests\Validators.Test\Validators.Test.csproj", "{41E3D868-117C-4E0F-A796-401BA828D565}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCases.Test", "tests\UseCases.Test\UseCases.Test.csproj", "{2157E49B-49AB-4477-B448-8D58816119D3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseCases.Test", "tests\UseCases.Test\UseCases.Test.csproj", "{2157E49B-49AB-4477-B448-8D58816119D3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi.Test", "tests\WebApi.Test\WebApi.Test.csproj", "{3DEE7C3C-2237-4E0C-8918-BD802FF8A362}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApi.Test", "tests\WebApi.Test\WebApi.Test.csproj", "{3DEE7C3C-2237-4E0C-8918-BD802FF8A362}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Utils", "tests\Tests.Utils\Tests.Utils.csproj", "{518EFFC5-ADF1-40E0-8B13-FBA37ED4FB6F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,10 @@ Global
 		{3DEE7C3C-2237-4E0C-8918-BD802FF8A362}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3DEE7C3C-2237-4E0C-8918-BD802FF8A362}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3DEE7C3C-2237-4E0C-8918-BD802FF8A362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{518EFFC5-ADF1-40E0-8B13-FBA37ED4FB6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{518EFFC5-ADF1-40E0-8B13-FBA37ED4FB6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{518EFFC5-ADF1-40E0-8B13-FBA37ED4FB6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{518EFFC5-ADF1-40E0-8B13-FBA37ED4FB6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -87,6 +93,7 @@ Global
 		{41E3D868-117C-4E0F-A796-401BA828D565} = {0D0EFD21-B449-4375-BACA-5A1BF9203115}
 		{2157E49B-49AB-4477-B448-8D58816119D3} = {0D0EFD21-B449-4375-BACA-5A1BF9203115}
 		{3DEE7C3C-2237-4E0C-8918-BD802FF8A362} = {0D0EFD21-B449-4375-BACA-5A1BF9203115}
+		{518EFFC5-ADF1-40E0-8B13-FBA37ED4FB6F} = {0D0EFD21-B449-4375-BACA-5A1BF9203115}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AE53F923-F6FD-4154-AF54-A4698392CA7F}
