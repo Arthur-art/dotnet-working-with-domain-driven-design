@@ -7,10 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
     <PackageReference Include="Bogus" Version="34.0.2" />
+    <PackageReference Include="Moq" Version="4.20.69" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\src\Backend\CookBook.Application\CookBook.Application.csproj" />
+    <ProjectReference Include="..\..\src\Backend\CookBook.Domain\CookBook.Domain.csproj" />
     <ProjectReference Include="..\..\src\Shared\CookBook.Comunication\CookBook.Comunication.csproj" />
   </ItemGroup>
 
