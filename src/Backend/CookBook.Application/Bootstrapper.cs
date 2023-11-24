@@ -1,5 +1,6 @@
 ﻿using CookBook.Application.Services.Cryptography;
 using CookBook.Application.Services.Token;
+using CookBook.Application.UseCases.Login.DoLogin;
 using CookBook.Application.UseCases.User.Register;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,5 +19,6 @@ public static class Bootstrapper
         services.AddScoped(option => new TokenController(int.Parse(tokenLifeTime.Value), tokenKeySection.Value));
         services.AddScoped(option => new PasswordCryptography(passwordKeySection.Value));
         services.AddScoped<IUserRegisterUseCase, UserRegisterUseCase>();
+        services.AddScoped<ILoginUseCase, LoginUseCase>();
     }
 }

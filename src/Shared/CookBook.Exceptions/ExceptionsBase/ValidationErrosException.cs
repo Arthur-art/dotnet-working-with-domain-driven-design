@@ -4,7 +4,7 @@ public class ValidationErrosException : CookBookException
 {
     public List<string> ErrorMessages { get; set; }
 
-    public ValidationErrosException(List<string> messages)
+    public ValidationErrosException(List<string> messages) : base(String.Empty)
     {
         ErrorMessages = messages;
     }

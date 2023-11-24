@@ -97,6 +97,15 @@ namespace CookBook.Exceptions {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to O e-mail e/ou senha estão incorretos..
+        /// </summary>
+        public static string INVALID_LOGIN {
+            get {
+                return ResourceManager.GetString("INVALID_LOGIN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to O e-mail do usuário é inválido..
         /// </summary>
         public static string INVALID_USER_EMAIL {
