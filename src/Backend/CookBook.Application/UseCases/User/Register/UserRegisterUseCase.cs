@@ -6,6 +6,7 @@ using CookBook.Exceptions.ExceptionsBase;
 using CookBook.Comunication.Response;
 using CookBook.Application.Services.Token;
 using CookBook.Exceptions;
+using CookBook.Domain.Repositories.UserRepository;
 
 namespace CookBook.Application.UseCases.User.Register;
 

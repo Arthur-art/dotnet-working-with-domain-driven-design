@@ -1,4 +1,4 @@
-﻿namespace CookBook.Domain.Repositories;
+﻿namespace CookBook.Domain.Repositories.UserRepository;
 
 public interface IUserReadOnlyRepository
 {

@@ -2,7 +2,7 @@
 using CookBook.Application.Services.Token;
 using CookBook.Comunication.Request;
 using CookBook.Comunication.Response;
-using CookBook.Domain.Repositories;
+using CookBook.Domain.Repositories.UserRepository;
 using CookBook.Exceptions.ExceptionsBase;
 
 namespace CookBook.Application.UseCases.Login.DoLogin;

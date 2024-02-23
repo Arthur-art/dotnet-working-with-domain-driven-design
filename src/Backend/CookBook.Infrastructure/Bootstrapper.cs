@@ -1,4 +1,5 @@
 ﻿using CookBook.Domain.Repositories;
+using CookBook.Domain.Repositories.UserRepository;
 using CookBook.Infrastructure.RepositoryAccess;
 using CookBook.Infrastructure.RepositoryAccess.Repository;
 using FluentMigrator.Runner;
@@ -31,7 +32,8 @@ public static class Bootstrapper
     public static void AddRepositories(IServiceCollection services)
     {
         services.AddScoped<IUserWriteOnlyRepository, UserRepository>()
-            .AddScoped<IUserReadOnlyRepository, UserRepository>();
+            .AddScoped<IUserReadOnlyRepository, UserRepository>()
+            .AddScoped<IUpdateOnlyRepository, UserRepository>();
     }
 
     private static void AddFluentMigrator(IServiceCollection services, string connectionString)

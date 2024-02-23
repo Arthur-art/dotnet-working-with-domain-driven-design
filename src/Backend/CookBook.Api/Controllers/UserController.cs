@@ -4,10 +4,7 @@ using CookBook.Comunication.Response;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CookBook.Api.Controllers;
-
-[ApiController]
-[Route("[controller]")]
-public class UserController : ControllerBase
+public class UserController : CookBookControllerBase
 {
 
     [HttpPost(Name = "UserRegister")]

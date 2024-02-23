@@ -1,4 +1,4 @@
-﻿using CookBook.Domain.Repositories;
+﻿using CookBook.Domain.Repositories.UserRepository;
 using Moq;
 
 namespace Tests.Utils.Repositories;
