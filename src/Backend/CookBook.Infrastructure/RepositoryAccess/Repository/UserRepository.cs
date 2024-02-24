@@ -33,7 +33,7 @@ public class UserRepository : IUserReadOnlyRepository, IUserWriteOnlyRepository,
 
     public void Update(User user)
     {
-       _context.Users.Add(user);
+       _context.Users.Update(user);
     }
 
     public async Task<bool> UserExists(string email)

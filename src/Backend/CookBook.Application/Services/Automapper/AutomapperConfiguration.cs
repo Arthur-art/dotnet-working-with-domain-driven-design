@@ -7,7 +7,6 @@ public class AutomapperConfiguration : Profile
 {
     public AutomapperConfiguration() 
     {
-        CreateMap<RequestUserRegisterJson, Domain.Entities.User>()
-            .ForMember(destiny => destiny.Password, config => config.Ignore());
+        CreateMap<RequestUserRegisterJson, Domain.Entities.User>();
     }
 }

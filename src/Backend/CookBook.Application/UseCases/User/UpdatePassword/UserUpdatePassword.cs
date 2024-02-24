@@ -1,6 +1,7 @@
 ﻿using CookBook.Application.Services.Cryptography;
 using CookBook.Application.Services.LoggedUser;
 using CookBook.Comunication.Request;
+using CookBook.Domain.Repositories;
 using CookBook.Domain.Repositories.UserRepository;
 using CookBook.Exceptions;
 using CookBook.Exceptions.ExceptionsBase;
@@ -13,13 +14,15 @@ public class UserUpdatePassword : IUserUpdatePassword
     private readonly ILoggedUser _loggedUser;
     private readonly PasswordCryptography _passwordCryptography;
     private readonly IUpdateOnlyRepository _updateOnlyRepository;
+    private readonly IWorkUnit _workUnit;
     public UserUpdatePassword(IUpdateOnlyRepository context, ILoggedUser loggedUser, IUpdateOnlyRepository updateOnlyRepository,
-        PasswordCryptography passwordCryptography)
+        PasswordCryptography passwordCryptography, IWorkUnit workUnit)
     {
         _context = context;
         _loggedUser = loggedUser;
         _passwordCryptography = passwordCryptography;
         _updateOnlyRepository = updateOnlyRepository;
+        _workUnit = workUnit;
     }
     public async Task Execute(RequestUserUpdatePasswordJson updatePasswordJson)
     {
@@ -31,6 +34,8 @@ public class UserUpdatePassword : IUserUpdatePassword
         userById.Password = _passwordCryptography.Encrypt(updatePasswordJson.NewPassword);
 
         _context.Update(userById);
+
+        _workUnit.Commit();
     }
 
     private void Validate(RequestUserUpdatePasswordJson updatePasswordJson, Domain.Entities.User user)

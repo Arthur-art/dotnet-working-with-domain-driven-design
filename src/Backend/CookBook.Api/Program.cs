@@ -25,6 +25,8 @@ builder.Services.AddScoped(provider => new AutoMapper.MapperConfiguration(cfg =>
     cfg.AddProfile(new AutomapperConfiguration());
 }).CreateMapper());
 
+builder.Services.AddScoped<AuthenticatedUserAttribute>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
