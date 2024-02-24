@@ -61,6 +61,15 @@ namespace CookBook.Exceptions {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Senha inválida..
+        /// </summary>
+        public static string CURRENT_PASSWORD_INVALID {
+            get {
+                return ResourceManager.GetString("CURRENT_PASSWORD_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to O e-mail do usuário deve ser informado..
         /// </summary>
         public static string EMPTY_USER_EMAIL {

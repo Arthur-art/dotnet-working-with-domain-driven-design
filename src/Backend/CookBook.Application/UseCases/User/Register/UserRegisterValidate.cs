@@ -12,12 +12,7 @@ public class UserRegisterValidate : AbstractValidator<RequestUserRegisterJson>
         RuleFor(param => param.Name).NotEmpty().WithMessage(ResourceExceptionsMessages.EMPTY_USER_NAME);
         RuleFor(param => param.Email).NotEmpty().WithMessage(ResourceExceptionsMessages.EMPTY_USER_EMAIL);
         RuleFor(param => param.PhoneNumber).NotEmpty().WithMessage(ResourceExceptionsMessages.EMPTY_USER_PHONE);
-        RuleFor(param => param.Password).NotEmpty().WithMessage(ResourceExceptionsMessages.EMPTY_USER_PASSWORD);
-
-        When(param => !string.IsNullOrWhiteSpace(param.Password), () =>
-        {
-            RuleFor(param => param.Password.Length).GreaterThanOrEqualTo(6).WithMessage(ResourceExceptionsMessages.INVALID_USER_PASSWORD);
-        });
+        RuleFor(param => param.Password).SetValidator(new PasswordValidator());
         When(param => !string.IsNullOrWhiteSpace(param.Email), () =>
         {
             RuleFor(param => param.Email).EmailAddress().WithMessage(ResourceExceptionsMessages.INVALID_USER_EMAIL);

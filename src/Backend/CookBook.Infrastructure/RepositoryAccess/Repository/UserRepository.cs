@@ -21,6 +21,16 @@ public class UserRepository : IUserReadOnlyRepository, IUserWriteOnlyRepository,
         return await _context.Users.AsNoTracking().FirstOrDefaultAsync(c => c.Email == email && c.Password == password);
     }
 
+    public async Task<User> RecoverById(long id)
+    {
+        return await _context.Users.FirstOrDefaultAsync(c => c.Id == id);
+    }
+
+    public async Task<User> RecoverUserByEmail(string email)
+    {
+       return await _context.Users.AsNoTracking().FirstOrDefaultAsync(c => c.Email.Equals(email));
+    }
+
     public void Update(User user)
     {
        _context.Users.Add(user);
